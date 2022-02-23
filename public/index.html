@@ -48,7 +48,29 @@
     <p id="load">Firebase SDK Loading&hellip;</p> -->
 
     <h1>Hello</h1>
-
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCzYXcA_UXkNHW7YiCtw9uG2RYt-3OTBlg",
+        authDomain: "test-62da9.firebaseapp.com",
+        projectId: "test-62da9",
+        storageBucket: "test-62da9.appspot.com",
+        messagingSenderId: "946457891377",
+        appId: "1:946457891377:web:5497af0e44a5cdbe98fb10",
+        measurementId: "G-QBEPRMVF49"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
